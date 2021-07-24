@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		D102B89426ABA60500AD1FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B89326ABA60500AD1FFA /* AppDelegate.swift */; };
 		D102B89626ABA60500AD1FFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B89526ABA60500AD1FFA /* SceneDelegate.swift */; };
-		D102B89826ABA60500AD1FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B89726ABA60500AD1FFA /* ViewController.swift */; };
+		D102B89826ABA60500AD1FFA /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B89726ABA60500AD1FFA /* RootController.swift */; };
 		D102B89B26ABA60500AD1FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D102B89926ABA60500AD1FFA /* Main.storyboard */; };
 		D102B89D26ABA60600AD1FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D102B89C26ABA60600AD1FFA /* Assets.xcassets */; };
 		D102B8A026ABA60600AD1FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D102B89E26ABA60600AD1FFA /* LaunchScreen.storyboard */; };
 		D102B8AB26ABA60600AD1FFA /* BodyFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8AA26ABA60600AD1FFA /* BodyFitTests.swift */; };
 		D102B8B626ABA60600AD1FFA /* BodyFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8B526ABA60600AD1FFA /* BodyFitUITests.swift */; };
+		D102B8C926ABACC100AD1FFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8C826ABACC100AD1FFA /* LoginView.swift */; };
+		D102B8CB26ABACCE00AD1FFA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8CA26ABACCE00AD1FFA /* SignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		D102B89026ABA60500AD1FFA /* BodyFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D102B89326ABA60500AD1FFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D102B89526ABA60500AD1FFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D102B89726ABA60500AD1FFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D102B89726ABA60500AD1FFA /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		D102B89A26ABA60500AD1FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D102B89C26ABA60600AD1FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D102B89F26ABA60600AD1FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		D102B8B126ABA60600AD1FFA /* BodyFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D102B8B526ABA60600AD1FFA /* BodyFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFitUITests.swift; sourceTree = "<group>"; };
 		D102B8B726ABA60600AD1FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D102B8C826ABACC100AD1FFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D102B8CA26ABACCE00AD1FFA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,14 @@
 		D102B89226ABA60500AD1FFA /* BodyFit */ = {
 			isa = PBXGroup;
 			children = (
+				D102B8C726ABA64E00AD1FFA /* New Group */,
+				D102B8C626ABA64300AD1FFA /* Helpers */,
+				D102B8C526ABA63300AD1FFA /* Models */,
+				D102B8C426ABA62B00AD1FFA /* ViewModels */,
+				D102B8C326ABA62100AD1FFA /* Views */,
 				D102B89326ABA60500AD1FFA /* AppDelegate.swift */,
 				D102B89526ABA60500AD1FFA /* SceneDelegate.swift */,
-				D102B89726ABA60500AD1FFA /* ViewController.swift */,
+				D102B89726ABA60500AD1FFA /* RootController.swift */,
 				D102B89926ABA60500AD1FFA /* Main.storyboard */,
 				D102B89C26ABA60600AD1FFA /* Assets.xcassets */,
 				D102B89E26ABA60600AD1FFA /* LaunchScreen.storyboard */,
@@ -126,6 +135,43 @@
 				D102B8B726ABA60600AD1FFA /* Info.plist */,
 			);
 			path = BodyFitUITests;
+			sourceTree = "<group>";
+		};
+		D102B8C326ABA62100AD1FFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D102B8C826ABACC100AD1FFA /* LoginView.swift */,
+				D102B8CA26ABACCE00AD1FFA /* SignupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D102B8C426ABA62B00AD1FFA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D102B8C526ABA63300AD1FFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D102B8C626ABA64300AD1FFA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D102B8C726ABA64E00AD1FFA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D102B89826ABA60500AD1FFA /* ViewController.swift in Sources */,
+				D102B89826ABA60500AD1FFA /* RootController.swift in Sources */,
 				D102B89426ABA60500AD1FFA /* AppDelegate.swift in Sources */,
+				D102B8C926ABACC100AD1FFA /* LoginView.swift in Sources */,
 				D102B89626ABA60500AD1FFA /* SceneDelegate.swift in Sources */,
+				D102B8CB26ABACCE00AD1FFA /* SignupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
