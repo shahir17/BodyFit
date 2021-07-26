@@ -18,10 +18,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        let navVC = UINavigationController()
+        let coordinator = MainCoordinator()
+        coordinator.navigationController = navVC
         let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = RootController() // Your initial view controller.
-            window.makeKeyAndVisible()
-            self.window = window
+        window.rootViewController = navVC
+        window.makeKeyAndVisible()
+        self.window = window
+        
+        coordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

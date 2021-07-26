@@ -3,20 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D102B89426ABA60500AD1FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B89326ABA60500AD1FFA /* AppDelegate.swift */; };
 		D102B89626ABA60500AD1FFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B89526ABA60500AD1FFA /* SceneDelegate.swift */; };
-		D102B89826ABA60500AD1FFA /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B89726ABA60500AD1FFA /* RootController.swift */; };
-		D102B89B26ABA60500AD1FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D102B89926ABA60500AD1FFA /* Main.storyboard */; };
+		D102B89826ABA60500AD1FFA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B89726ABA60500AD1FFA /* LoginViewController.swift */; };
 		D102B89D26ABA60600AD1FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D102B89C26ABA60600AD1FFA /* Assets.xcassets */; };
 		D102B8A026ABA60600AD1FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D102B89E26ABA60600AD1FFA /* LaunchScreen.storyboard */; };
 		D102B8AB26ABA60600AD1FFA /* BodyFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8AA26ABA60600AD1FFA /* BodyFitTests.swift */; };
 		D102B8B626ABA60600AD1FFA /* BodyFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8B526ABA60600AD1FFA /* BodyFitUITests.swift */; };
-		D102B8C926ABACC100AD1FFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8C826ABACC100AD1FFA /* LoginView.swift */; };
-		D102B8CB26ABACCE00AD1FFA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8CA26ABACCE00AD1FFA /* SignupView.swift */; };
+		D102B8CD26ACE68100AD1FFA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8CC26ACE68100AD1FFA /* Coordinator.swift */; };
+		D102B8CF26ACE70E00AD1FFA /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8CE26ACE70E00AD1FFA /* MainCoordinator.swift */; };
+		D102B8DD26ACF26100AD1FFA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8DC26ACF26100AD1FFA /* SecondViewController.swift */; };
+		D102B8DF26ADB9D500AD1FFA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8DE26ADB9D500AD1FFA /* Event.swift */; };
+		D102B8E126ADC1CD00AD1FFA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8E026ADC1CD00AD1FFA /* UIView.swift */; };
+		D102B8E326ADC21E00AD1FFA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8E226ADC21E00AD1FFA /* UIViewController.swift */; };
+		D102B8E526ADD85600AD1FFA /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8E426ADD85600AD1FFA /* TabViewController.swift */; };
+		D102B8E826ADDA4500AD1FFA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8E726ADDA4500AD1FFA /* SignUpViewController.swift */; };
+		D102B8EA26ADDDAF00AD1FFA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8E926ADDDAF00AD1FFA /* LoginViewModel.swift */; };
+		D102B8EC26ADDDDF00AD1FFA /* PasswordStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8EB26ADDDDF00AD1FFA /* PasswordStatus.swift */; };
+		D102B8EE26ADDE3500AD1FFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8ED26ADDE3500AD1FFA /* LoginView.swift */; };
+		D102B8F026ADE9AB00AD1FFA /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8EF26ADE9AB00AD1FFA /* UITextField.swift */; };
+		D102B8F226ADE9DF00AD1FFA /* InitialPublished.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8F126ADE9DF00AD1FFA /* InitialPublished.swift */; };
+		D102B8F426ADEDD600AD1FFA /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102B8F326ADEDD600AD1FFA /* UIButton.swift */; };
+		D102B8F726AE4D6D00AD1FFA /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D102B8F626AE4D6D00AD1FFA /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +52,7 @@
 		D102B89026ABA60500AD1FFA /* BodyFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D102B89326ABA60500AD1FFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D102B89526ABA60500AD1FFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D102B89726ABA60500AD1FFA /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
-		D102B89A26ABA60500AD1FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D102B89726ABA60500AD1FFA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D102B89C26ABA60600AD1FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D102B89F26ABA60600AD1FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D102B8A126ABA60600AD1FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,8 +62,20 @@
 		D102B8B126ABA60600AD1FFA /* BodyFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D102B8B526ABA60600AD1FFA /* BodyFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFitUITests.swift; sourceTree = "<group>"; };
 		D102B8B726ABA60600AD1FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D102B8C826ABACC100AD1FFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		D102B8CA26ABACCE00AD1FFA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		D102B8CC26ACE68100AD1FFA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D102B8CE26ACE70E00AD1FFA /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		D102B8DC26ACF26100AD1FFA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D102B8DE26ADB9D500AD1FFA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D102B8E026ADC1CD00AD1FFA /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D102B8E226ADC21E00AD1FFA /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D102B8E426ADD85600AD1FFA /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		D102B8E726ADDA4500AD1FFA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D102B8E926ADDDAF00AD1FFA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D102B8EB26ADDDDF00AD1FFA /* PasswordStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatus.swift; sourceTree = "<group>"; };
+		D102B8ED26ADDE3500AD1FFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D102B8EF26ADE9AB00AD1FFA /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		D102B8F126ADE9DF00AD1FFA /* InitialPublished.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialPublished.swift; sourceTree = "<group>"; };
+		D102B8F326ADEDD600AD1FFA /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D102B8F726AE4D6D00AD1FFA /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,15 +127,14 @@
 		D102B89226ABA60500AD1FFA /* BodyFit */ = {
 			isa = PBXGroup;
 			children = (
-				D102B8C726ABA64E00AD1FFA /* New Group */,
-				D102B8C626ABA64300AD1FFA /* Helpers */,
-				D102B8C526ABA63300AD1FFA /* Models */,
-				D102B8C426ABA62B00AD1FFA /* ViewModels */,
-				D102B8C326ABA62100AD1FFA /* Views */,
 				D102B89326ABA60500AD1FFA /* AppDelegate.swift */,
 				D102B89526ABA60500AD1FFA /* SceneDelegate.swift */,
-				D102B89726ABA60500AD1FFA /* RootController.swift */,
-				D102B89926ABA60500AD1FFA /* Main.storyboard */,
+				D102B8C526ABA63300AD1FFA /* Models */,
+				D102B8C326ABA62100AD1FFA /* Views */,
+				D102B8C426ABA62B00AD1FFA /* ViewModels */,
+				D102B8F826AE51A900AD1FFA /* Controllers */,
+				D102B8D026ACE82000AD1FFA /* Coordinators */,
+				D102B8D126ACE84900AD1FFA /* Extensions */,
 				D102B89C26ABA60600AD1FFA /* Assets.xcassets */,
 				D102B89E26ABA60600AD1FFA /* LaunchScreen.storyboard */,
 				D102B8A126ABA60600AD1FFA /* Info.plist */,
@@ -140,8 +163,7 @@
 		D102B8C326ABA62100AD1FFA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D102B8C826ABACC100AD1FFA /* LoginView.swift */,
-				D102B8CA26ABACCE00AD1FFA /* SignupView.swift */,
+				D102B8ED26ADDE3500AD1FFA /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +171,7 @@
 		D102B8C426ABA62B00AD1FFA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D102B8E926ADDDAF00AD1FFA /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -156,22 +179,42 @@
 		D102B8C526ABA63300AD1FFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D102B8F126ADE9DF00AD1FFA /* InitialPublished.swift */,
+				D102B8DE26ADB9D500AD1FFA /* Event.swift */,
+				D102B8EB26ADDDDF00AD1FFA /* PasswordStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D102B8C626ABA64300AD1FFA /* Helpers */ = {
+		D102B8D026ACE82000AD1FFA /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				D102B8CC26ACE68100AD1FFA /* Coordinator.swift */,
+				D102B8CE26ACE70E00AD1FFA /* MainCoordinator.swift */,
 			);
-			path = Helpers;
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		D102B8C726ABA64E00AD1FFA /* New Group */ = {
+		D102B8D126ACE84900AD1FFA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D102B8E026ADC1CD00AD1FFA /* UIView.swift */,
+				D102B8E226ADC21E00AD1FFA /* UIViewController.swift */,
+				D102B8EF26ADE9AB00AD1FFA /* UITextField.swift */,
+				D102B8F326ADEDD600AD1FFA /* UIButton.swift */,
 			);
-			path = "New Group";
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D102B8F826AE51A900AD1FFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D102B89726ABA60500AD1FFA /* LoginViewController.swift */,
+				D102B8DC26ACF26100AD1FFA /* SecondViewController.swift */,
+				D102B8E726ADDA4500AD1FFA /* SignUpViewController.swift */,
+				D102B8E426ADD85600AD1FFA /* TabViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +233,9 @@
 			dependencies = (
 			);
 			name = BodyFit;
+			packageProductDependencies = (
+				D102B8F626AE4D6D00AD1FFA /* IQKeyboardManagerSwift */,
+			);
 			productName = BodyFit;
 			productReference = D102B89026ABA60500AD1FFA /* BodyFit.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +307,9 @@
 				Base,
 			);
 			mainGroup = D102B88726ABA60400AD1FFA;
+			packageReferences = (
+				D102B8F526AE4D6D00AD1FFA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = D102B89126ABA60500AD1FFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,7 +328,6 @@
 			files = (
 				D102B8A026ABA60600AD1FFA /* LaunchScreen.storyboard in Resources */,
 				D102B89D26ABA60600AD1FFA /* Assets.xcassets in Resources */,
-				D102B89B26ABA60500AD1FFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +352,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D102B89826ABA60500AD1FFA /* RootController.swift in Sources */,
+				D102B8F426ADEDD600AD1FFA /* UIButton.swift in Sources */,
+				D102B8E826ADDA4500AD1FFA /* SignUpViewController.swift in Sources */,
+				D102B8DD26ACF26100AD1FFA /* SecondViewController.swift in Sources */,
+				D102B8DF26ADB9D500AD1FFA /* Event.swift in Sources */,
+				D102B8EC26ADDDDF00AD1FFA /* PasswordStatus.swift in Sources */,
+				D102B89826ABA60500AD1FFA /* LoginViewController.swift in Sources */,
+				D102B8E326ADC21E00AD1FFA /* UIViewController.swift in Sources */,
+				D102B8CF26ACE70E00AD1FFA /* MainCoordinator.swift in Sources */,
+				D102B8EA26ADDDAF00AD1FFA /* LoginViewModel.swift in Sources */,
+				D102B8EE26ADDE3500AD1FFA /* LoginView.swift in Sources */,
+				D102B8CD26ACE68100AD1FFA /* Coordinator.swift in Sources */,
+				D102B8E126ADC1CD00AD1FFA /* UIView.swift in Sources */,
+				D102B8F226ADE9DF00AD1FFA /* InitialPublished.swift in Sources */,
+				D102B8F026ADE9AB00AD1FFA /* UITextField.swift in Sources */,
 				D102B89426ABA60500AD1FFA /* AppDelegate.swift in Sources */,
-				D102B8C926ABACC100AD1FFA /* LoginView.swift in Sources */,
+				D102B8E526ADD85600AD1FFA /* TabViewController.swift in Sources */,
 				D102B89626ABA60500AD1FFA /* SceneDelegate.swift in Sources */,
-				D102B8CB26ABACCE00AD1FFA /* SignupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,14 +404,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D102B89926ABA60500AD1FFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D102B89A26ABA60500AD1FFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D102B89E26ABA60600AD1FFA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -641,6 +693,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D102B8F526AE4D6D00AD1FFA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D102B8F626AE4D6D00AD1FFA /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D102B8F526AE4D6D00AD1FFA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D102B88826ABA60400AD1FFA /* Project object */;
 }
